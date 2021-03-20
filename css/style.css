@@ -1,0 +1,189 @@
+html{
+    font-size: 10px;
+    /*font-family: Georgia, 'Times New Roman', Times, serif;*/
+    width: 100%;
+    height: 100vh;
+    color: #000;
+    margin: auto;
+    background-color: rgb(247, 226, 247);
+    /*background: linear-gradient(-45deg, #f474f8, #f860eee5, #b3f8eb, #70fae1);*/
+    background-size: 600%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+
+body{
+    background-color: #ffffff;
+    width: 600px;
+    margin: 0 auto;
+    border: 10px black;
+}
+
+main{
+    padding: 0px 0px 0px 15px;
+}
+
+header{
+    height: auto;
+    padding: 4px;
+}
+
+header h1{
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: rgb(129, 129, 129) 4px 3px 2px;
+    line-height: 60px;
+}
+
+nav{
+    /*padding: auto;*/
+    text-align: center;
+    line-height: 32px;
+    background-color: #fd78ab;
+}
+
+nav ul{
+    margin-top: 15px;
+}
+
+nav li{
+    display: inline;
+    padding: 0 10px 0 10px;
+    font-size: 16px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
+    font-variant: small-caps;
+}
+
+nav a:hover{
+    background: #942e94;
+}
+
+aside{
+    /*display: block;*/
+    background-color: rgb(245, 188, 219);
+    float: right;
+    width: 250px;
+    height: 100%;
+    margin-left: 3px;
+    padding-left: 4px;
+}
+
+aside h2{
+    text-align: center;
+    font-size: 22px;
+}
+
+aside p, a{
+    color: #0f000e;
+    font-weight: bold;
+    text-align: justify;
+    padding: 8px;
+}
+
+#me{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: 5px solid #0f000e;*/
+    border-radius: 8px;
+    text-align: center;
+}
+
+article{
+    padding-left: 25px;
+    text-align: justify;
+}
+
+h3, h2{
+    color: #85028a;
+    font-size: 18px;
+    font-family: 'VT323', monospace;
+    font-weight: bolder;
+}
+
+section{
+    padding-right: 15px;
+}
+
+section p, li{
+    font-weight: bold;
+}
+
+section h2{
+    width: 200px;
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    border-top: 5px dotted #8b048b;
+    border-bottom: 6px solid #8b048b;
+    padding: 5px;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #942e94;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer img{
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.foto_com_mouse{
+    width: 165px;
+    height: 165px;
+    transition: 0.9;
+}
+
+.foto_sem_mouse{
+    width: 140px;
+    height: 140px;
+    transition: 0.9;
+}
+
+.escuro{
+    background-color: rgb(27, 1, 25);
+    color: whitesmoke;
+}
+
+.claro{
+    background-color: rgb(247, 213, 247);
+}
+
+/* tentei fazer o media mas não deu certo @media screen and (max-width: 500px){
+    nav a{
+        float:nome;
+        width: 100;
+    }
+     aside{
+        width:100%;
+        float: none;
+    }
+    aside p, a{
+        float: right;
+    }
+}*/
+
+
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
